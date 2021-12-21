@@ -9,4 +9,4 @@ RUN git clone https://github.com/shwetank-1993/face-mask.git
 
 COPY requirements.txt /tmp/
 RUN pip install --requirement /tmp/requirements.txt
-
+WORKDIR /face-mask
