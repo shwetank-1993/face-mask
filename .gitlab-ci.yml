@@ -1,0 +1,9 @@
+stages:
+ - docker
+services:
+ - docker:dind
+docker -job:
+ stage: docker
+ image: docker:dind
+ scripts:
+  - docker build .
