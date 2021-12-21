@@ -49,7 +49,6 @@ To pull the docker image from docker hub, type this command: \
 After creating docker image, type this command `$ xhost +local:root` allows the root user to access the running X server. The current X server is indicated by the **DISPLAY** environment variable. \
 To run docker image (to create container), type this command: \
 `$ docker run -it --rm --privileged=True --env="DISPLAY" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --device="/dev/video0:/dev/video0" face-mask` \
-`# cd face-mask` \
 `# python3 detect_mask_video.py`\
 where:
 * `rm` means remove, this is used to remove the container once it gets stopped. \
