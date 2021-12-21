@@ -41,7 +41,7 @@ You can either create a docker image as shown below or you can pull the docker i
 `RUN pip install --requirement /tmp/requirements.txt` \
 `COPY . /tmp/` \
 To run this Dockerfile, use this command: \
-`$ docker build -f Dockerfile -t "<image name> ."`
+`$ docker build -f Dockerfile -t "<image name>" .`
 Congratulation, you just created docker image from docker file. \
 
 To pull the docker image from docker hub, type this command: \
